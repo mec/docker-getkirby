@@ -1,4 +1,4 @@
-# Docker & Kirby 
+# Docker & Kirby
 
 This repo contains my Dockerfiles for both plainkit and starterkit versions of [Kirby CMS](https://getkirby.com).
 
@@ -12,7 +12,7 @@ You can use these images from [Docker hub](https://hub.docker.com), just install
 
 Which will run them in detached mode on port 80, visit:
 
-``http://localhost`` 
+``http://localhost``
 
 to see the running site.
 
@@ -22,4 +22,4 @@ The *content*, *site* and *assets* directories are mounted and saved to the file
 
 ``docker run -d -p 80:80 -v /User/kirby-project/content:/var/www/html/content -v ./User/kirby-project/site:/var/www/html/site -v ./User/kirby-project/assets:/var/www/html/assets mecrawlings/getkirby-starterkit``
 
-or use my Docker compose Kirby project.
+or use my Docker [getkirby-base](https://github.com/mec/getkirby-base) project which does it for you!
