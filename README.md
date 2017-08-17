@@ -23,3 +23,6 @@ The *content*, *site* and *assets* directories are mounted and saved to the file
 ``docker run -d -p 80:80 -v /User/kirby-project/content:/var/www/html/content -v ./User/kirby-project/site:/var/www/html/site -v ./User/kirby-project/assets:/var/www/html/assets mecrawlings/getkirby-starterkit``
 
 or use my Docker [getkirby-base](https://github.com/mec/getkirby-base) project which does it for you!
+
+# Note
+Kirby is not free, you can develop locally for free but you must buy a license.
