@@ -29,4 +29,4 @@ RUN mkdir /var/www/html/thumbs \
   && chmod -R 755 /var/www/html/thumbs
 
 # expose kirby directories
-VOLUME ["/var/www/html/content", "/var/www/html/assets", "/var/www/html/content"]
+VOLUME ["/var/www/html/content", "/var/www/html/assets", "/var/www/html/site"]
