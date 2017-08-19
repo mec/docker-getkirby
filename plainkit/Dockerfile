@@ -1,4 +1,4 @@
-# based on php apache offical
+# based on custom slim image
 FROM mecrawlings/php:7.1-apache
 
 # set working directory
