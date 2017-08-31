@@ -10,13 +10,21 @@ Kirby is not free, you can develop locally with Docker and then when you move to
 [https://github.com/getkirby/starterkit](https://github.com/getkirby/starterkit)
 
 ## How to use this image
-To quickly launch and use the image:
+To quickly launch and use the image on port 80:
 
 `$ docker run --name my-kirby-project -p 80:80 -d mecrawlings/getkirby-starterkit`
 
 If you want to work on a project or keep any changes you need to mount some directories:
 
-`$ docker run --name my-kirby-project -p 80:80 -d mecrawlings/getkirby-starterkit -v <fullpathto>/content -v <fullpathto>/site -v <fullpathto>/assets`
+```
+$  docker run -d --rm -p 80:80 --name kirby2 \
+-v /full/path/to/content:/var/www/localhost/htdocs/content/ \
+-v /full/path/to/content:/var/www/localhost/htdocs/site/ \
+-v /full/path/to/content:/var/www/localhost/htdocs/assets/ \
+mecrawlings/kirby-plainkit
+```
+
+The three Kirby directories need to have the content inside them!
 
 You can make this much simpler by…
 
@@ -37,3 +45,7 @@ services:
 ```
 
 Then just run docker-compose up from your project and your up and running. Changes made to the content, site or assets folder will persist.
+
+I keep an up-to-date Kirby-Docker-compose project on github:
+
+[https://github.com/mec/getkirby-base](https://github.com/mec/getkirby-base)
