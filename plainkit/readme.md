@@ -1,6 +1,4 @@
 ## What is Kirby
-![Kirby logo](https://github.com/mec/docker-getkirby/blob/master/kirby_logo.png)
-
 Awesome flat file CMS.
 
 Kirby is not free, you can develop locally with Docker and then when you move to production you must purchase a license – support great software!
