@@ -8,6 +8,5 @@ WORKDIR /var/www/localhost/htdocs/
 COPY ./starterkit /var/www/localhost/htdocs/
 
 # create thumbs folder and set permissions for kirby
-RUN mkdir thumbs \
-  && chown -R apache:apache /var/www/localhost/htdocs/ \
+RUN chown -R apache:apache /var/www/localhost/htdocs/ \
   && chmod -R 755 /var/www/localhost/htdocs/thumbs
